@@ -2,18 +2,18 @@
 {% extends "layouts/project.html" %}
 
 <!-- Setting up variables to customize "project" details to be specific to walruses -->
-{% set project = "Walruses" %}
-{% set overview = "https://nighthawkcodingsociety.com/projectsearch/dash" %}
-{% set scrumboard = "https://github.com/ridhimainukurti/group-2/projects/1" %}
-{% set repo = "https://github.com/ridhimainukurti/group-2" %}
-{% set authors = "https://wasc.nighthawkcodingsociety.com/about"  %}
+{% set project = "Safin" %}
+{% set overview = "https://www.safin.dev" %}
+{% set scrumboard = "https://github.com/users/safinsingh/projects/1" %}
+{% set repo = "https://github.com/safinsingh/fastpages-apcsp" %}
+{% set authors = "https://github.com/safinsingh"  %}
 
 <!-- Setting up a block replacement to customize background to RINGS -->
 {% block background %}
     <script src="{{ url_for('static', filename='js/three.r119.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/vanta.rings.min.js') }}"></script>
-    <script>
-        VANTA.RINGS({
+    <script src="{{ url_for('static', filename='js/vanta.net.min.js') }}"></script>
+    <script defer>
+        VANTA.NET({
             el: "body",
             mouseControls: true,
             touchControls: true,
@@ -21,7 +21,12 @@
             minHeight: 200.00,
             minWidth: 200.00,
             scale: 1.00,
-            scaleMobile: 1.00
+            scaleMobile: 1.00,
+            color: 0xffffff,
+            backgroundColor: 0x0,
+            points: 7.00,
+            maxDistance: 23.00,
+            spacing: 18.00
         })
     </script>
 {% endblock %}
