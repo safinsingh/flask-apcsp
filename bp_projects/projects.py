@@ -18,6 +18,6 @@ def kangaroos():
 def walruses():
     return render_template("walruses.html")
 
-@app_projects.route('/hawkers/')
+@app_projects.route('/AlexsPage/')
 def hawkers():
-    return render_template("hawkers.html")
+    return render_template("Alexs-Page.html")
