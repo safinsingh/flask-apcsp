@@ -5,9 +5,9 @@ app_projects = Blueprint('projects', __name__,
                 template_folder='templates/bp_projects/')
 
 # connects /kangaroos path to render kangaroos.html
-@app_projects.route('/portfolio/')
-def portfolio():
-    return render_template("portfolio.html")
+@app_projects.route('/Kalani/')
+def Kalani():
+    return render_template("Kalani.html")
 
 # connects /kangaroos path to render kangaroos.html
 @app_projects.route('/navan/')
